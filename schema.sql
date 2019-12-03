@@ -1,0 +1,16 @@
+DROP TABLE IF EXISTS agi;
+
+CREATE TABLE agi (
+zip_code INTEGER PRIMARY KEY,
+state VARCHAR,
+total_agi FLOAT
+);
+
+DROP TABLE IF EXISTS homes;
+
+CREATE TABLE homes (
+ID INTEGER PRIMARY KEY,
+zip_code INTEGER,
+state VARCHAR,
+"avg_listing" FLOAT
+);
